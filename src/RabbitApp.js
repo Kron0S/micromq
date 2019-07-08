@@ -30,7 +30,8 @@ class RabbitApp {
       this.connection = await amqplib.connect(this.options.rabbit.url);
 
       ['error', 'close'].forEach((event) => {
-        this.connection.on(event, () => {
+        this.connection.on(event, err => {
+          debug(() => 'creating connection ${err}');
           this.connection = null;
           this.createConnection();
         });
