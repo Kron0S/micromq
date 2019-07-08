@@ -1,7 +1,7 @@
 {
   "name": "micromq2",
-  "version": "3.0.2",
-  "description": "Microservice framework based on native Node.js HTTP module and AMQP protocol (express integration as feature).",
+  "version": "3.0.3",
+  "description": "Microservice framework based on native Node.js HTTP module and AMQP protocol.",
   "main": "src/MicroService.js",
   "scripts": {
     "test": "mocha ./tests --exit --timeout 30000"
@@ -38,13 +38,5 @@
     "chai-http": "^4.2.1",
     "chai-json-schema": "^1.5.0",
     "mocha": "^5.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bifot/micromq.git"
-  },
-  "bugs": {
-    "url": "https://github.com/bifot/micromq/issues"
-  },
-  "homepage": "https://github.com/bifot/micromq#readme"
+  }
 }
